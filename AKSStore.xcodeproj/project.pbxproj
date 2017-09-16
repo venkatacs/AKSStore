@@ -15,6 +15,8 @@
 		D8F6A4F51F6C6838009BBD3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F6A4F31F6C6838009BBD3A /* LaunchScreen.storyboard */; };
 		D8F6A5001F6C6839009BBD3A /* AKSStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6A4FF1F6C6839009BBD3A /* AKSStoreTests.m */; };
 		D8F6A50B1F6C6839009BBD3A /* AKSStoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6A50A1F6C6839009BBD3A /* AKSStoreUITests.m */; };
+		D8F6A5241F6C9F88009BBD3A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F6A5231F6C9F87009BBD3A /* QuartzCore.framework */; };
+		D8F781661F6D52250096D4D4 /* CustomList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8F781651F6D52250096D4D4 /* CustomList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		D8F6A5061F6C6839009BBD3A /* AKSStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKSStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F6A50A1F6C6839009BBD3A /* AKSStoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKSStoreUITests.m; sourceTree = "<group>"; };
 		D8F6A50C1F6C6839009BBD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F6A5231F6C9F87009BBD3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D8F781651F6D52250096D4D4 /* CustomList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F6A5241F6C9F88009BBD3A /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				D8F6A4FE1F6C6838009BBD3A /* AKSStoreTests */,
 				D8F6A5091F6C6839009BBD3A /* AKSStoreUITests */,
 				D8F6A4E31F6C6838009BBD3A /* Products */,
+				D8F6A5221F6C9F87009BBD3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +116,7 @@
 				D8F6A4F31F6C6838009BBD3A /* LaunchScreen.storyboard */,
 				D8F6A4F61F6C6838009BBD3A /* Info.plist */,
 				D8F6A4E51F6C6838009BBD3A /* Supporting Files */,
+				D8F781651F6D52250096D4D4 /* CustomList.plist */,
 			);
 			path = AKSStore;
 			sourceTree = "<group>";
@@ -138,6 +145,14 @@
 				D8F6A50C1F6C6839009BBD3A /* Info.plist */,
 			);
 			path = AKSStoreUITests;
+			sourceTree = "<group>";
+		};
+		D8F6A5221F6C9F87009BBD3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8F6A5231F6C9F87009BBD3A /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F6A4F51F6C6838009BBD3A /* LaunchScreen.storyboard in Resources */,
+				D8F781661F6D52250096D4D4 /* CustomList.plist in Resources */,
 				D8F6A4F21F6C6838009BBD3A /* Assets.xcassets in Resources */,
 				D8F6A4F01F6C6838009BBD3A /* Main.storyboard in Resources */,
 			);
@@ -509,6 +525,7 @@
 				D8F6A5111F6C6839009BBD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F6A5121F6C6839009BBD3A /* Build configuration list for PBXNativeTarget "AKSStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +534,7 @@
 				D8F6A5141F6C6839009BBD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F6A5151F6C6839009BBD3A /* Build configuration list for PBXNativeTarget "AKSStoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +543,7 @@
 				D8F6A5171F6C6839009BBD3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
