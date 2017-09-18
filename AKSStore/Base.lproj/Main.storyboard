@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -153,7 +154,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="LOCKSMITH STORE" id="H2h-Pp-YkW"/>
+                    <navigationItem key="navigationItem" title="LOCKSMITH STORE" id="H2h-Pp-YkW">
+                        <rightBarButtonItems>
+                            <barButtonItem image="menu_icon" id="ibs-6f-wSG"/>
+                            <barButtonItem title="Cart" id="r92-Hs-Gcz"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="dt9-gu-ey5" id="1jm-FW-SRp"/>
                         <outlet property="sbTabBar" destination="EKV-iL-x7h" id="40A-Ar-SEb"/>
@@ -164,4 +170,7 @@
             <point key="canvasLocation" x="933.60000000000002" y="-583.3583208395803"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu_icon" width="16" height="16"/>
+    </resources>
 </document>

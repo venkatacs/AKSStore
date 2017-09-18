@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80D4CE11F701A4E007CA812 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D80D4CE01F701A4E007CA812 /* menu_icon.png */; };
 		D83292281F6F1FB80064B3A7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83292271F6F1FB80064B3A7 /* MainViewController.m */; };
 		D832922B1F6F20E10064B3A7 /* ProductSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D832922A1F6F20E10064B3A7 /* ProductSearchViewController.m */; };
 		D832922E1F6F20F60064B3A7 /* VehicleSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D832922D1F6F20F60064B3A7 /* VehicleSearchViewController.m */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D80D4CE01F701A4E007CA812 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
 		D83292261F6F1FB80064B3A7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D83292271F6F1FB80064B3A7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D83292291F6F20E10064B3A7 /* ProductSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchViewController.h; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		D8F6A4E41F6C6838009BBD3A /* AKSStore */ = {
 			isa = PBXGroup;
 			children = (
+				D80D4CE01F701A4E007CA812 /* menu_icon.png */,
 				D8EED7821F6FF65E0044BCA8 /* AKS.db */,
 				D8F6A4E81F6C6838009BBD3A /* AppDelegate.h */,
 				D8F6A4E91F6C6838009BBD3A /* AppDelegate.m */,
@@ -295,6 +298,7 @@
 				D8F781661F6D52250096D4D4 /* CustomList.plist in Resources */,
 				D8F6A4F21F6C6838009BBD3A /* Assets.xcassets in Resources */,
 				D8F6A4F01F6C6838009BBD3A /* Main.storyboard in Resources */,
+				D80D4CE11F701A4E007CA812 /* menu_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
