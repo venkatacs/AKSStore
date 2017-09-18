@@ -49,7 +49,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nUh-J0-o3O" id="jpi-uq-5jL">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -107,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="-43" y="-581"/>
         </scene>
-        <!--Main View Controller-->
+        <!--LOCKSMITH STORE-->
         <scene sceneID="DZh-Ks-GCT">
             <objects>
                 <viewController id="3np-sh-Uu1" customClass="MainViewController" sceneMemberID="viewController">
@@ -120,7 +120,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKV-iL-x7h">
-                                <rect key="frame" x="0.0" y="125" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="61" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
@@ -138,24 +138,22 @@
                                 </connections>
                             </tabBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" editable="NO" text="American Key Supply" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMx-ES-kfa">
-                                <rect key="frame" x="0.0" y="64" width="375" height="61"/>
+                                <rect key="frame" x="0.0" y="1" width="375" height="61"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.76054515" green="1" blue="0.97207072100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.16594631315335895" green="0.42083706231827245" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dt9-gu-ey5">
-                                <rect key="frame" x="0.0" y="174" width="375" height="493"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="H2h-Pp-YkW">
-                        <barButtonItem key="backBarButtonItem" title="&lt;LOCKSMITH STORE" id="WaH-80-rgv"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="LOCKSMITH STORE" id="H2h-Pp-YkW"/>
                     <connections>
                         <outlet property="containerView" destination="dt9-gu-ey5" id="1jm-FW-SRp"/>
                         <outlet property="sbTabBar" destination="EKV-iL-x7h" id="40A-Ar-SEb"/>
