@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D83292281F6F1FB80064B3A7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83292271F6F1FB80064B3A7 /* MainViewController.m */; };
+		D832922B1F6F20E10064B3A7 /* ProductSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D832922A1F6F20E10064B3A7 /* ProductSearchViewController.m */; };
+		D832922E1F6F20F60064B3A7 /* VehicleSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D832922D1F6F20F60064B3A7 /* VehicleSearchViewController.m */; };
+		D8EED77E1F6FF5270044BCA8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EED77D1F6FF5270044BCA8 /* libsqlite3.dylib */; };
+		D8EED7811F6FF5740044BCA8 /* DatabaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EED7801F6FF5740044BCA8 /* DatabaseLayer.m */; };
+		D8EED7831F6FF65E0044BCA8 /* AKS.db in Resources */ = {isa = PBXBuildFile; fileRef = D8EED7821F6FF65E0044BCA8 /* AKS.db */; };
+		D8EED7841F6FF65E0044BCA8 /* AKS.db in Resources */ = {isa = PBXBuildFile; fileRef = D8EED7821F6FF65E0044BCA8 /* AKS.db */; };
+		D8EED7851F6FF65E0044BCA8 /* AKS.db in Resources */ = {isa = PBXBuildFile; fileRef = D8EED7821F6FF65E0044BCA8 /* AKS.db */; };
 		D8F6A4E71F6C6838009BBD3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6A4E61F6C6838009BBD3A /* main.m */; };
 		D8F6A4EA1F6C6838009BBD3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6A4E91F6C6838009BBD3A /* AppDelegate.m */; };
 		D8F6A4ED1F6C6838009BBD3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F6A4EC1F6C6838009BBD3A /* ViewController.m */; };
@@ -37,6 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D83292261F6F1FB80064B3A7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D83292271F6F1FB80064B3A7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D83292291F6F20E10064B3A7 /* ProductSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchViewController.h; sourceTree = "<group>"; };
+		D832922A1F6F20E10064B3A7 /* ProductSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchViewController.m; sourceTree = "<group>"; };
+		D832922C1F6F20F60064B3A7 /* VehicleSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleSearchViewController.h; sourceTree = "<group>"; };
+		D832922D1F6F20F60064B3A7 /* VehicleSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleSearchViewController.m; sourceTree = "<group>"; };
+		D8EED77D1F6FF5270044BCA8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		D8EED77F1F6FF5740044BCA8 /* DatabaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseLayer.h; sourceTree = "<group>"; };
+		D8EED7801F6FF5740044BCA8 /* DatabaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseLayer.m; sourceTree = "<group>"; };
+		D8EED7821F6FF65E0044BCA8 /* AKS.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = AKS.db; sourceTree = "<group>"; };
 		D8F6A4E21F6C6838009BBD3A /* AKSStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKSStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F6A4E61F6C6838009BBD3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8F6A4E81F6C6838009BBD3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EED77E1F6FF5270044BCA8 /* libsqlite3.dylib in Frameworks */,
 				D8F6A5241F6C9F88009BBD3A /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,16 +126,25 @@
 		D8F6A4E41F6C6838009BBD3A /* AKSStore */ = {
 			isa = PBXGroup;
 			children = (
+				D8EED7821F6FF65E0044BCA8 /* AKS.db */,
 				D8F6A4E81F6C6838009BBD3A /* AppDelegate.h */,
 				D8F6A4E91F6C6838009BBD3A /* AppDelegate.m */,
 				D8F6A4EB1F6C6838009BBD3A /* ViewController.h */,
 				D8F6A4EC1F6C6838009BBD3A /* ViewController.m */,
 				D8F6A4EE1F6C6838009BBD3A /* Main.storyboard */,
+				D83292261F6F1FB80064B3A7 /* MainViewController.h */,
+				D83292271F6F1FB80064B3A7 /* MainViewController.m */,
 				D8F6A4F11F6C6838009BBD3A /* Assets.xcassets */,
 				D8F6A4F31F6C6838009BBD3A /* LaunchScreen.storyboard */,
 				D8F6A4F61F6C6838009BBD3A /* Info.plist */,
 				D8F6A4E51F6C6838009BBD3A /* Supporting Files */,
 				D8F781651F6D52250096D4D4 /* CustomList.plist */,
+				D83292291F6F20E10064B3A7 /* ProductSearchViewController.h */,
+				D832922A1F6F20E10064B3A7 /* ProductSearchViewController.m */,
+				D832922C1F6F20F60064B3A7 /* VehicleSearchViewController.h */,
+				D832922D1F6F20F60064B3A7 /* VehicleSearchViewController.m */,
+				D8EED77F1F6FF5740044BCA8 /* DatabaseLayer.h */,
+				D8EED7801F6FF5740044BCA8 /* DatabaseLayer.m */,
 			);
 			path = AKSStore;
 			sourceTree = "<group>";
@@ -150,6 +178,7 @@
 		D8F6A5221F6C9F87009BBD3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8EED77D1F6FF5270044BCA8 /* libsqlite3.dylib */,
 				D8F6A5231F6C9F87009BBD3A /* QuartzCore.framework */,
 			);
 			name = Frameworks;
@@ -261,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EED7831F6FF65E0044BCA8 /* AKS.db in Resources */,
 				D8F6A4F51F6C6838009BBD3A /* LaunchScreen.storyboard in Resources */,
 				D8F781661F6D52250096D4D4 /* CustomList.plist in Resources */,
 				D8F6A4F21F6C6838009BBD3A /* Assets.xcassets in Resources */,
@@ -272,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EED7841F6FF65E0044BCA8 /* AKS.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EED7851F6FF65E0044BCA8 /* AKS.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8EED7811F6FF5740044BCA8 /* DatabaseLayer.m in Sources */,
 				D8F6A4ED1F6C6838009BBD3A /* ViewController.m in Sources */,
 				D8F6A4EA1F6C6838009BBD3A /* AppDelegate.m in Sources */,
 				D8F6A4E71F6C6838009BBD3A /* main.m in Sources */,
+				D832922B1F6F20E10064B3A7 /* ProductSearchViewController.m in Sources */,
+				D83292281F6F1FB80064B3A7 /* MainViewController.m in Sources */,
+				D832922E1F6F20F60064B3A7 /* VehicleSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

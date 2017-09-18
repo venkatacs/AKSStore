@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = [UIColor greenColor];
     self.categoryTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
     
     NSDictionary *plistData = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"CustomList" ofType:@"plist"]];
     
