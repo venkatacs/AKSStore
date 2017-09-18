@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SearchViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UITextView *productName;
+@property (weak, nonatomic) IBOutlet UITextView *productPrice;
+@property (weak, nonatomic) IBOutlet UITextView *productDesc;
+@property (weak, nonatomic) IBOutlet UITextView *inStockOrNot;
 
 @end

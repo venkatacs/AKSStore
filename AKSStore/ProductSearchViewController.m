@@ -7,8 +7,15 @@
 //
 
 #import "ProductSearchViewController.h"
+#import "ProductDetails.h"
+#import "DatabaseLayer.h"
+#import "SearchViewCell.h"
 
 @interface ProductSearchViewController ()
+
+@property (nonatomic, strong) DatabaseLayer *dbLayer;
+
+-(void) loadProductDetails;
 
 @end
 
@@ -16,12 +23,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.dbLayer = [[DatabaseLayer alloc] initWithDatabase:@"AKS.db"];
+    self.productArray = [[NSMutableArray alloc]init];
+    self.productTable.delegate = self;
+    self.productTable.dataSource = self;
+    [self loadProductDetails];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) loadProductDetails
+{
+    NSString *query = @"select * from product_details";
+    
+    if (self.productArray != nil) {
+        self.productArray = nil;
+    }
+    self.productArray = [[NSMutableArray alloc] initWithArray:[self.dbLayer loadData:query]];
+    
+    NSLog(@"%@", self.productArray);
+    
+    [self.productTable reloadData];
+}
+
+
+#pragma mark - TableView Datasource Methods
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.productArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"ProductSearchCell";
+    SearchViewCell *searchViewCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    ProductDetails *pDetails = (self.productArray)[indexPath.row];
+    
+    searchViewCell.productName.text = pDetails.productName;
+    searchViewCell.productDesc.text = pDetails.productDescription;
+    searchViewCell.productPrice.text = [NSString stringWithFormat:@"$%@",pDetails.productPrice];
+    
+    return searchViewCell;
 }
 
 /*

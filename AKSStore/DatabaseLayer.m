@@ -75,7 +75,7 @@
     }
     self.arrColNames = [[NSMutableArray alloc] init];
     
-    BOOL openDbResult = sqlite3_open([dbPath UTF8String], &sqliteDB);
+    BOOL openDbResult = sqlite3_open_v2([dbPath UTF8String], &sqliteDB, SQLITE_OPEN_READWRITE, NULL);
     
     if (openDbResult == SQLITE_OK)
     {
@@ -140,6 +140,8 @@
 - (NSArray *)loadData:(NSString *)query
 {
     [self runQuery:[query UTF8String] isExecutable:NO];
+    
+    NSLog(@"%@", self.arrResults);
     
     return (NSArray *)self.arrResults;
     

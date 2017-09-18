@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductSearchViewController : UIViewController
+@interface ProductSearchViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *productTable;
+
+@property (nonatomic, strong) NSMutableArray *productArray;
 
 @end
