@@ -156,8 +156,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="LOCKSMITH STORE" id="H2h-Pp-YkW">
                         <rightBarButtonItems>
-                            <barButtonItem image="menu_icon" id="ibs-6f-wSG"/>
-                            <barButtonItem title="Cart" id="r92-Hs-Gcz"/>
+                            <barButtonItem title="Menu" width="10" id="ibs-6f-wSG"/>
+                            <barButtonItem title="Cart" width="10" id="r92-Hs-Gcz"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
@@ -170,7 +170,4 @@
             <point key="canvasLocation" x="933.60000000000002" y="-583.3583208395803"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="menu_icon" width="16" height="16"/>
-    </resources>
 </document>
