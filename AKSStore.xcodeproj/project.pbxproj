@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D80D4CE11F701A4E007CA812 /* menu_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D80D4CE01F701A4E007CA812 /* menu_icon.png */; };
+		D80D4CE31F701EFE007CA812 /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80D4CE21F701EFE007CA812 /* SearchViewCell.xib */; };
+		D80D4CE71F7022EC007CA812 /* SearchViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D80D4CE51F7022EC007CA812 /* SearchViewCell.m */; };
 		D83292281F6F1FB80064B3A7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83292271F6F1FB80064B3A7 /* MainViewController.m */; };
 		D832922B1F6F20E10064B3A7 /* ProductSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D832922A1F6F20E10064B3A7 /* ProductSearchViewController.m */; };
 		D832922E1F6F20F60064B3A7 /* VehicleSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D832922D1F6F20F60064B3A7 /* VehicleSearchViewController.m */; };
+		D8EB59691F70291B00AC3F28 /* ProductDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EB59681F70291B00AC3F28 /* ProductDetails.m */; };
 		D8EED77E1F6FF5270044BCA8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EED77D1F6FF5270044BCA8 /* libsqlite3.dylib */; };
 		D8EED7811F6FF5740044BCA8 /* DatabaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EED7801F6FF5740044BCA8 /* DatabaseLayer.m */; };
 		D8EED7831F6FF65E0044BCA8 /* AKS.db in Resources */ = {isa = PBXBuildFile; fileRef = D8EED7821F6FF65E0044BCA8 /* AKS.db */; };
@@ -47,12 +50,17 @@
 
 /* Begin PBXFileReference section */
 		D80D4CE01F701A4E007CA812 /* menu_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_icon.png; sourceTree = "<group>"; };
+		D80D4CE21F701EFE007CA812 /* SearchViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewCell.xib; sourceTree = "<group>"; };
+		D80D4CE41F7022EC007CA812 /* SearchViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewCell.h; sourceTree = "<group>"; };
+		D80D4CE51F7022EC007CA812 /* SearchViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewCell.m; sourceTree = "<group>"; };
 		D83292261F6F1FB80064B3A7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D83292271F6F1FB80064B3A7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D83292291F6F20E10064B3A7 /* ProductSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductSearchViewController.h; sourceTree = "<group>"; };
 		D832922A1F6F20E10064B3A7 /* ProductSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductSearchViewController.m; sourceTree = "<group>"; };
 		D832922C1F6F20F60064B3A7 /* VehicleSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VehicleSearchViewController.h; sourceTree = "<group>"; };
 		D832922D1F6F20F60064B3A7 /* VehicleSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VehicleSearchViewController.m; sourceTree = "<group>"; };
+		D8EB59671F70291B00AC3F28 /* ProductDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetails.h; sourceTree = "<group>"; };
+		D8EB59681F70291B00AC3F28 /* ProductDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetails.m; sourceTree = "<group>"; };
 		D8EED77D1F6FF5270044BCA8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		D8EED77F1F6FF5740044BCA8 /* DatabaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseLayer.h; sourceTree = "<group>"; };
 		D8EED7801F6FF5740044BCA8 /* DatabaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseLayer.m; sourceTree = "<group>"; };
@@ -148,6 +156,11 @@
 				D832922D1F6F20F60064B3A7 /* VehicleSearchViewController.m */,
 				D8EED77F1F6FF5740044BCA8 /* DatabaseLayer.h */,
 				D8EED7801F6FF5740044BCA8 /* DatabaseLayer.m */,
+				D80D4CE21F701EFE007CA812 /* SearchViewCell.xib */,
+				D80D4CE41F7022EC007CA812 /* SearchViewCell.h */,
+				D80D4CE51F7022EC007CA812 /* SearchViewCell.m */,
+				D8EB59671F70291B00AC3F28 /* ProductDetails.h */,
+				D8EB59681F70291B00AC3F28 /* ProductDetails.m */,
 			);
 			path = AKSStore;
 			sourceTree = "<group>";
@@ -298,6 +311,7 @@
 				D8F781661F6D52250096D4D4 /* CustomList.plist in Resources */,
 				D8F6A4F21F6C6838009BBD3A /* Assets.xcassets in Resources */,
 				D8F6A4F01F6C6838009BBD3A /* Main.storyboard in Resources */,
+				D80D4CE31F701EFE007CA812 /* SearchViewCell.xib in Resources */,
 				D80D4CE11F701A4E007CA812 /* menu_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +343,8 @@
 				D8F6A4ED1F6C6838009BBD3A /* ViewController.m in Sources */,
 				D8F6A4EA1F6C6838009BBD3A /* AppDelegate.m in Sources */,
 				D8F6A4E71F6C6838009BBD3A /* main.m in Sources */,
+				D8EB59691F70291B00AC3F28 /* ProductDetails.m in Sources */,
+				D80D4CE71F7022EC007CA812 /* SearchViewCell.m in Sources */,
 				D832922B1F6F20E10064B3A7 /* ProductSearchViewController.m in Sources */,
 				D83292281F6F1FB80064B3A7 /* MainViewController.m in Sources */,
 				D832922E1F6F20F60064B3A7 /* VehicleSearchViewController.m in Sources */,

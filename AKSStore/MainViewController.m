@@ -26,11 +26,13 @@ const CGFloat tbHeight = 20;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSDictionary *attrib = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:UIFontSlantTrait size:14], NSFontAttributeName,[UIColor whiteColor], NSForegroundColorAttributeName,nil];
+    [[UITabBarItem appearance] setTitleTextAttributes:attrib forState: UIControlStateNormal];
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
-        self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:30.0f green:144.0f blue:255.0f alpha:0];
+        self.navigationController.navigationBar.tintColor = [UIColor blueColor];
     }
     else{
-        self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:30.0f green:144.0f blue:255.0f alpha:0];
+        self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
         self.navigationController.navigationBar.translucent = NO;
     }
     
